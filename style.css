@@ -1,0 +1,434 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    color: white;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #3b82f6;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 6px 18px
+        rgba(
+            59,
+            130,
+            246,
+            0.4
+        );
+
+}
+
+.stats {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #22c55e,
+        #4ade80
+    );
+
+    transition: 0.4s;
+    box-shadow:
+0 0 15px rgba(
+    34,
+    197,
+    94,
+    0.7
+);
+}
+select {
+    padding: 10px;
+}
+input,
+select {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+
+    flex: 1;
+
+    background: rgba(255,255,255,0.1);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 10px 25px rgba(
+        59,
+        130,
+        246,
+        0.35
+    );
+
+}
+.search-section {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.search-section input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.analytics {
+
+    margin-top: 20px;
+
+    background: rgba(255,255,255,0.08);
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+}
+
+.analytics h2 {
+
+    margin-top: 0;
+
+}
+
+.analytics div {
+
+    margin-top: 10px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    background: rgba(255,255,255,0.05);
+
+}
+.light-mode {
+
+    background:
+    linear-gradient(
+        135deg,
+        #e2e8f0,
+        #cbd5e1
+    );
+
+}
+
+.light-mode .container {
+
+    background: white;
+
+    color: black;
+
+}
+
+.light-mode .stat-card {
+
+    background:
+    rgba(0,0,0,0.05);
+
+}
+
+.light-mode .analytics {
+
+    background:
+    rgba(0,0,0,0.05);
+
+}
+
+.light-mode .analytics div {
+
+    background:
+    rgba(0,0,0,0.05);
+
+}
+.stat-card h2 {
+
+    font-size: 2rem;
+
+    margin: 10px 0;
+
+}
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
+
+.container {
+
+    animation: fadeIn 0.8s ease;
+
+}
+.hero {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+    animation:
+floatHero 4s ease-in-out infinite;
+
+}
+.hero h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 10px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #3b82f6,
+        #22c55e
+    );
+
+    -webkit-background-clip:
+        text;
+
+    -webkit-text-fill-color:
+        transparent;
+
+}
+.hero p {
+
+    font-size: 1.1rem;
+
+    opacity: 0.8;
+
+}
+@keyframes floatHero {
+
+    0% {
+
+        transform:
+            translateY(0px);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-5px);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0px);
+
+    }
+
+}
+.progress-circle {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+.progress-circle svg {
+
+    transform: rotate(-90deg);
+
+}
+.bg-circle {
+
+    fill: none;
+
+    stroke:
+    rgba(255,255,255,0.15);
+
+    stroke-width: 10;
+
+}
+.progress-circle-fill {
+
+    fill: none;
+
+    stroke: #22c55e;
+
+    stroke-width: 10;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 314;
+
+    stroke-dashoffset: 314;
+
+    transition: 0.8s ease;
+
+}
+.circle-text {
+
+    position: absolute;
+
+    font-size: 1.4rem;
+
+    font-weight: bold;
+
+}
+.subject-box {
+
+    margin-top: 15px;
+
+}
+.subject-progress {
+
+    height: 10px;
+
+    background:
+    rgba(255,255,255,0.1);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-top: 8px;
+
+}
+.subject-fill {
+
+    height: 100%;
+
+    width: 0%;
+
+    background:
+    linear-gradient(
+        90deg,
+        #22c55e,
+        #3b82f6
+    );
+
+    transition: 0.8s ease;
+
+}
+.physics-fill {
+
+    background: #3b82f6;
+
+}
+.chemistry-fill {
+
+    background: #a855f7;
+
+}
+.maths-fill {
+
+    background: #22c55e;
+
+}

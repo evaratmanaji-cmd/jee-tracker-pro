@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Tracker Pro</title>
+    <button id="themeToggle">
+    🌙 Toggle Theme
+</button>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+       <div class="hero">
+
+    <h1>
+        🚀 JEE Tracker Pro
+    </h1>
+
+    <p>
+        Track Backlogs.
+        Measure Progress.
+        Crack JEE Smarter.
+    </p>
+
+</div>
+        <div class="input-section">
+
+    <select id="subjectSelect">
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Maths">Maths</option>
+    </select>
+
+    <input type="text"
+           id="chapterInput"
+           placeholder="Enter Chapter Name">
+
+    <button onclick="addChapter()">
+        Add Chapter
+    </button>
+
+</div>
+<div class="search-section">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search Chapters..."
+    >
+</div>
+
+ <div class="stats">
+
+    <div class="stat-card">
+        <h3>Total Chapters</h3>
+        <h2 id="totalCount">0</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>Completed</h3>
+        <h2 id="completedCount">0</h2>
+    </div>
+
+    <div class="stat-card">
+
+    <h3>Progress</h3>
+
+    <div class="progress-circle">
+
+        <svg width="120" height="120">
+
+            <circle
+                cx="60"
+                cy="60"
+                r="50"
+                class="bg-circle"
+            />
+
+            <circle
+                cx="60"
+                cy="60"
+                r="50"
+                class="progress-circle-fill"
+                id="circleProgress"
+            />
+
+        </svg>
+
+        <div
+            class="circle-text"
+            id="progressCount"
+        >
+            0%
+        </div>
+
+    </div>
+
+</div>
+
+    <div class="stat-card">
+        <h3>🏆 Streak</h3>
+        <h2 id="streakCount">0</h2>
+    </div>
+
+</div>
+
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+<div class="analytics">
+
+    <h2>📚 Subject Analytics</h2>
+
+    <div class="subject-box">
+
+        <div id="physicsStats">
+            Physics: 0 / 0
+        </div>
+
+        <div class="subject-progress">
+
+            <div class="subject-fill physics-fill" id="physicsBar"></div>
+
+        </div>
+
+    </div>
+
+    <div class="subject-box">
+
+        <div id="chemistryStats">
+            Chemistry: 0 / 0
+        </div>
+
+        <div class="subject-progress">
+
+            <div class="subject-fill chemistry-fill" id="chemistryBar"></div>
+
+        </div>
+
+    </div>
+
+    <div class="subject-box">
+
+        <div id="mathsStats">
+            Maths: 0 / 0
+        </div>
+
+        <div class="subject-progress">
+
+           <div class="subject-fill maths-fill" id="mathsBar"></div>
+
+        </div>
+
+    </div>
+
+</div>
+        <ul id="chapterList">
+
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
